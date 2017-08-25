@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.section1 h3{
+	letter-spacing: 15px;
+}
+
+.jineng{
+	width: 100%;
+}
+.jineng li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+
+.zuopin  li{
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+
+/*钟表*/
+.out{
+	width: 220px;
+	height:220px;
+	/*background: linear-gradient(to bottom ,#f40 0,#f40 50%,#000 0,#000 );*/
+	position: absolute;
+	top:15px;
+	right:15px;
+}
+.inner{
+	width: 200px;
+	height:200px;
+	background: #fff;
+	margin:10px;
+	border-radius: 50%;
+	float: left;
+	position: relative;
+}
+
+/*太极图*/
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+		-webket-transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+		-webket-transform: rotate(360deg);
+	}
+}
+
+.taiji{
+	margin: 20px auto;
+	width: 198px;
+	height: 99px;
+	background: #fff;
+	border: 1px solid #000;
+	border-bottom: 100px solid #000;
+	position: absolute;
+	bottom:15px;
+	right:15px;
+	border-radius: 50%;
+	animation: rotate 2s linear infinite;
+}
+.taiji:before{
+	content: "";
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: #fff;
+	border: 40px solid #000;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border-radius: 50%;
+}
+.taiji:after{
+	content: "";
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: #000;
+	border: 40px solid #fff;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	border-radius: 50%;
+}

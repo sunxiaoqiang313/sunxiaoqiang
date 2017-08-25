@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/todolist.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>便签</title>
+</head>
+<body>
+<section class="leftbar">
+    <h3>TODOLIST</h3>
+    <ul>
+        <li class="daiban">查看待办事项</li>
+        <li class="yiwan">查看已完成事项</li>
+    </ul>
+</section>
+<div class="main">
+    <div class="container">
+        <div class="close iconfont">&#xe641;</div>
+        <div class="add">
+            <h3>添加新的事项</h3>
+            <textarea name="" id="" cols="30" rows="10" class="text"></textarea>
+            <div class="xianzhi">
+                <span>00</span><i style="font-style: normal">/40</i>
+            </div>
+            <input type="button" id="submit" value="提交">
+        </div>
+        <div class="wait">
+            <h3>未完成</h3>
+            <ul class="item">
+                <li>
+                    <input type="checkbox">
+                    <p>123456789123456789132456789</p>
+                    <time>2017/8/11 11:11</time>
+                    <i class="iconfont">&#xe622;</i>
+                </li>
+            </ul>
+            <input type="button" value="移动到已完成" class="lbtn movebtn">
+            <input type="button" value="添加" class="rbtn addbtn">
+        </div>
+        <div class="done">
+            <h3>已完成</h3>
+            <ul class="item">
+                <li>
+                    <input type="checkbox">
+                    <p>123456789123456789132456789</p>
+                    <time>2017/8/11 11:11</time>
+                    <i class="iconfont">&#xe622;</i>
+                </li>
+            </ul>
+            <input type="button" value="清除" class="lbtn clearbtn">
+            <input type="button" value="添加" class="rbtn addbtn">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/todolist.js"></script>  
+</html>

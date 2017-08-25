@@ -1,0 +1,68 @@
+.main{
+    width:800px;
+    height:600px;
+    margin:0 auto;
+    border:1px solid red;
+    display: flex;
+}
+.aside{
+    width:200px;
+    height:600px;
+    background: cyan;
+}
+.show{
+    width:150px;
+    margin:25px auto;
+    border:1px solid #333;
+    text-align: center;
+    line-height: 30px;
+}
+.show .con{
+    width: 100%;
+    height:30px;
+    background: #333;
+    color:#fff;
+}
+.show .title{
+    width: 100%;
+    height:30px;
+}
+.btn{
+    display: block;
+    width: 150px;
+    height:50px;
+    border-radius:25px;
+    background:#F2DCA0;
+    margin:20px auto;
+    color:#333;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height:50px;
+}
+.scene {
+    width: 600px;
+    height: 600px;
+    background: url(1.png)center;
+    background-size: cover;
+    position: relative;
+}
+
+.block {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    float: left;
+}
+.snackbody {
+    background:#F2DCA0;
+}
+.snackhead {
+    background: red;
+}
+.food{
+    background:blue;
+}
+#pause,#start{
+    cursor: pointer;
+}
